@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "blurb shield",
+  "version": "1.0",
+  "browser_action": {
+        "default_popup": "popup.html"
+    },
+  "permissions": [
+      "activeTab",
+      "tabs",
+      "webRequest",
+      "webRequestBlocking",
+      "*://*/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "web_accessible_resources":[
+    "patterns.ini"
+  ]
+}
